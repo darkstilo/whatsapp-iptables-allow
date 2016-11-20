@@ -4,7 +4,7 @@ Tutorial liberando serviços do Whatsapp em sua rede com o Iptables
 Primeiro de tudo você precisará  liberar tráfego na saída xmpp.
 Para isso iremos utilizar o seguinte comando no terminal, o mesmo irá atribuir a regra ao Iptables:
 
-#Nota: Para evitar erros, execute todos os comandos na raiz principal do sistema, caso esteja com dúvidas, digite o seguinte comando:
+> Nota: Para evitar erros, execute todos os comandos na raiz principal do sistema, caso esteja com dúvidas, digite o seguinte comando:
 
 ```
 cd ~
