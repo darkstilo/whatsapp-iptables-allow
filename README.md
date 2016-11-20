@@ -28,6 +28,11 @@ TCP / UDP: 59234, 50318
 
 UDP: 3478,45395
 ```
+| TCP 1 | TCP/UDP | UDP |
+| :---         |     :---:      |          ---: |
+| 4244   | 59234     | 3478    |
+| 5222     | 50318       | 45395      |
+
 
 Comandos a serem atribuídos a regra do Firewall:
 
