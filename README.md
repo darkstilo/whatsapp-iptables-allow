@@ -8,14 +8,14 @@ Para isso iremos utilizar o seguinte comando no terminal, o mesmo irá atribuir 
 
 cd ~
 
-Agora já pode executar os comandos normalmente.
+Agora sin você já pode executar os comandos normalmente.
 
 #/------------ LIBERAR TRÁFEGO NA SAÍDA XMPP------------/
 
 iptables -A FORWARD -p tcp --dport xmpp-client -j ACCEPT
 
 
-Agora precisaremos abrir algumas portas para que o serviço de voz possa operar normalmente:
+Após liberar o tráfego na saída xmpp, pecisaremos abrir algumas portas para que o serviço de voz possa operar normalmente:
 
 TCP: 4244,5222,5223,5228,5242 
 TCP / UDP: 59234, 50318 
