@@ -1,7 +1,8 @@
 # whatsapp-iptables-allow
-Tutorial liberando serviços do Whatsapp em sua rede com o Iptables
 
-Primeiro de tudo você precisará  liberar tráfego na saída xmpp.
+**Liberando serviços do Whatsapp em sua rede com o Iptables**
+
+Primeiro de tudo você precisará liberar tráfego na saída xmpp.
 Para isso iremos utilizar o seguinte comando no terminal, o mesmo irá atribuir a regra ao Iptables:
 
 > Nota: Para evitar erros, execute todos os comandos na raiz principal do sistema, caso esteja com dúvidas, digite o seguinte comando:
@@ -20,8 +21,8 @@ iptables -A FORWARD -p tcp --dport xmpp-client -j ACCEPT
 
 Após liberar o tráfego na saída xmpp, pecisaremos abrir algumas portas para que o serviço de voz possa operar normalmente:
 
-TCP: 4244,5222,5223,5228,5242 
-TCP / UDP: 59234, 50318 
+TCP: 4244,5222,5223,5228,5242
+TCP / UDP: 59234, 50318
 UDP: 3478,45395
 
 Comandos a serem atribuídos a regra do Firewall:
@@ -60,13 +61,13 @@ iptables -A FORWARD -p udp --dport 3478 -j ACCEPT # WhatsApp
 iptables -A FORWARD -p udp --dport 45395 -j ACCEPT # WhatsApp
 ```
 
-Pronto! Já liberamos todas as portas necessárias. O Próximo passo será liberar as cidrs(ips) do whatsapp em nosso firewall(iptables) e atribui-los a porta 443
+Pronto! Já liberamos todas as portas necessárias. O Próximo passo será liberar as cidrs(ips) do whatsapp em nosso firewall(iptables) e atribui-los a porta 443.
 
 Para isso iremos rodar o seguinte script:
 
 http://pastebin.com/raw/EsE1XZ80
 
-Execute cada uma dessas linhas em seu terminal
+Execute as linhas de comando em seu terminal
 
 **[ ADICIONANDO E EXECUTANDO O SCRIPT NA VPS ]**
 
@@ -87,7 +88,7 @@ Execute com:
 ./Whatsapp.sh
 ```
 
-> Importante: Caso dê alguns erros após executar o script, não se preocupe, pois o erro é referente ao sistema IPV6 não existir na sua máquina.
+> Importante: Caso surgir alguns erros após executar o script, não se preocupe, pois o erro é referente ao sistema IPV6 não existir na sua máquina.
 
 Estamos quase lá!
 
