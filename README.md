@@ -67,9 +67,9 @@ Para isso iremos rodar o seguinte script:
 
 http://pastebin.com/raw/EsE1XZ80
 
-Execute as linhas de comando em seu terminal
-
 **[ ADICIONANDO E EXECUTANDO O SCRIPT NA VPS ]**
+
+> Execute as linhas de comando em seu terminal
 
 Baixe o script com o comando:
 ```
