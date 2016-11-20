@@ -98,8 +98,7 @@ Estamos quase lá!
 
 Após ter feito todos os procedimentos acima descritos, é hora de testar.
 
-```
-Use o HTTP Injector 
 
-Para isso ative a opção Encaminhamento UDP e inicie a conexão com as informações da sua VPS.
-```
+> Use o HTTP Injector
+
+> Abra-o e ative a opção Encaminhamento UDP e inicie a conexão com as informações da sua VPS.
