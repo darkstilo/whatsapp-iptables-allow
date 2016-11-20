@@ -12,7 +12,7 @@ cd ~
 
 Agora sin você já pode executar os comandos normalmente.
 
-#/------------ LIBERAR TRÁFEGO NA SAÍDA XMPP------------/
+/------------ LIBERAR TRÁFEGO NA SAÍDA XMPP------------/
 
 ```
 iptables -A FORWARD -p tcp --dport xmpp-client -j ACCEPT
@@ -26,7 +26,7 @@ UDP: 3478,45395
 
 Comandos a serem atribuídos a regra do Firewall:
 
-#/------------ LIBERAR PORTAS TCPs ------------/
+/------------ LIBERAR PORTAS TCPs ------------/
 
 ```
 iptables -A FORWARD -p tcp --dport 4244 -j ACCEPT # WhatsApp
@@ -52,7 +52,7 @@ iptables -A FORWARD -p udp --dport 59234 -j ACCEPT # WhatsApp
 iptables -A FORWARD -p udp --dport 50318 -j ACCEPT # WhatsApp
 ```
 
-#/------------ LIBERAR PORTS UDPs ------------/
+/----- LIBERAR PORTS UDPs -------/
 
 ```
 iptables -A FORWARD -p udp --dport 3478 -j ACCEPT # WhatsApp
@@ -68,17 +68,17 @@ http://pastebin.com/raw/EsE1XZ80
 
 Execute cada uma dessas linhas em seu terminal
 
-#/----------- ADICIONANDO E EXECUTANDO O SCRIPT NA VPS ------------/
+/----------- ADICIONANDO E EXECUTANDO O SCRIPT NA VPS ------------/
 
-# Baixe o script com o comando:
+Baixe o script com o comando:
 ```
 wget http://pastebin.com/raw/EsE1XZ80 -O Whatsapp.sh
 ```
-# Converta o final das linhas para Unix com o comando:
+Converta o final das linhas para Unix com o comando:
 ```
 dos2unix Whatsapp.sh
 ```
-# Torne o script executável:
+Torne o script executável:
 ```
 chmod +x Whatsapp.sh
 ```
@@ -87,7 +87,7 @@ Execute com:
 ./Whatsapp.sh
 ```
 
-#Importante: Caso dê alguns erros após executar o script, não se preocupe, pois o erro é referente ao sistema IPV6 não existir na sua máquina.
+> Importante: Caso dê alguns erros após executar o script, não se preocupe, pois o erro é referente ao sistema IPV6 não existir na sua máquina.
 
 Estamos quase lá!
 
