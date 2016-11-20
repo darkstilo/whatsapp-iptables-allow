@@ -10,9 +10,9 @@ Para isso iremos utilizar o seguinte comando no terminal, o mesmo irá atribuir 
 cd ~
 ```
 
-Agora sin você já pode executar os comandos normalmente.
+Agora sim você já pode executar os comandos normalmente.
 
-**[LIBERAR TRÁFEGO NA SAÍDA XMPP]**
+**[ LIBERAR TRÁFEGO NA SAÍDA XMPP ]**
 
 ```
 iptables -A FORWARD -p tcp --dport xmpp-client -j ACCEPT
@@ -26,7 +26,7 @@ UDP: 3478,45395
 
 Comandos a serem atribuídos a regra do Firewall:
 
-**[LIBERAR PORTAS TCPs]**
+**[ LIBERAR PORTAS TCPs ]**
 
 ```
 iptables -A FORWARD -p tcp --dport 4244 -j ACCEPT # WhatsApp
@@ -40,7 +40,7 @@ iptables -A FORWARD -p tcp --dport 5228 -j ACCEPT # WhatsApp
 iptables -A FORWARD -p tcp --dport 5242 -j ACCEPT # WhatsApp
 ```
 
-**[LIBERAR PORTAS TCPs e UDPs]**
+**[ LIBERAR PORTAS TCPs e UDPs ]**
 
 ```
 iptables -A FORWARD -p tcp --dport 59234 -j ACCEPT # WhatsApp
@@ -52,7 +52,7 @@ iptables -A FORWARD -p udp --dport 59234 -j ACCEPT # WhatsApp
 iptables -A FORWARD -p udp --dport 50318 -j ACCEPT # WhatsApp
 ```
 
-**[LIBERAR PORTS UDPs]**
+**[ LIBERAR PORTS UDPs ]**
 
 ```
 iptables -A FORWARD -p udp --dport 3478 -j ACCEPT # WhatsApp
@@ -68,7 +68,7 @@ http://pastebin.com/raw/EsE1XZ80
 
 Execute cada uma dessas linhas em seu terminal
 
-**[ADICIONANDO E EXECUTANDO O SCRIPT NA VPS]**
+**[ ADICIONANDO E EXECUTANDO O SCRIPT NA VPS ]**
 
 Baixe o script com o comando:
 ```
