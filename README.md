@@ -40,7 +40,7 @@ iptables -A FORWARD -p tcp --dport 5228 -j ACCEPT # WhatsApp
 iptables -A FORWARD -p tcp --dport 5242 -j ACCEPT # WhatsApp
 ```
 
-#/------------ LIBERAR PORTAS TCPs e UDPs -----------/
+/--------- LIBERAR PORTAS TCPs e UDPs --------/
 
 ```
 iptables -A FORWARD -p tcp --dport 59234 -j ACCEPT # WhatsApp
@@ -68,7 +68,7 @@ http://pastebin.com/raw/EsE1XZ80
 
 Execute cada uma dessas linhas em seu terminal
 
-/----------- ADICIONANDO E EXECUTANDO O SCRIPT NA VPS ------------/
+/-- ADICIONANDO E EXECUTANDO O SCRIPT NA VPS --/
 
 Baixe o script com o comando:
 ```
@@ -95,4 +95,4 @@ Após ter feito todos os procedimentos acima descritos, é hora de testar.
 
 Para isso ative a opção Encaminhamento UDP e inicie a conexão com as informações da sua VPS
 
-Use o HTTP Injector 
+> Use o HTTP Injector 
